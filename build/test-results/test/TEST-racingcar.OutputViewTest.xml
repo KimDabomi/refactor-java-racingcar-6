@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="racingcar.OutputViewTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2023-11-06T12:19:03" hostname="gimdabomiui-MacBookAir.local" time="0.002">
+  <properties/>
+  <testcase name="우승자 출력 확인" classname="racingcar.OutputViewTest" time="0.0"/>
+  <testcase name="결과출력 인스턴스 생성확인" classname="racingcar.OutputViewTest" time="0.0"/>
+  <testcase name="각 라운드 경주 상태에 대한 출력 확인" classname="racingcar.OutputViewTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

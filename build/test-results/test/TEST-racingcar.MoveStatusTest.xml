@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="racingcar.MoveStatusTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2023-11-06T12:19:03" hostname="gimdabomiui-MacBookAir.local" time="0.002">
+  <properties/>
+  <testcase name="이동 여부 false인 경우에 대한 동작확인" classname="racingcar.MoveStatusTest" time="0.0"/>
+  <testcase name="이동 상태 인스턴스 생성확인" classname="racingcar.MoveStatusTest" time="0.0"/>
+  <testcase name="이동 여부 true인 경우에 대한 동작확인" classname="racingcar.MoveStatusTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

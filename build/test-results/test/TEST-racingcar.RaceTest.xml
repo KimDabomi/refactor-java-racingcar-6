@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="racingcar.RaceTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2023-11-06T12:19:03" hostname="gimdabomiui-MacBookAir.local" time="0.025">
+  <properties/>
+  <testcase name="공동우승자 가져오기에 대한 동작확인" classname="racingcar.RaceTest" time="0.02"/>
+  <testcase name="경주 시 전진에 대한 동작확인" classname="racingcar.RaceTest" time="0.001"/>
+  <testcase name="경주 시 정지에 대한 동작확인" classname="racingcar.RaceTest" time="0.0"/>
+  <testcase name="경주게임 인스턴스 생성확인" classname="racingcar.RaceTest" time="0.0"/>
+  <testcase name="우승자 가져오기에 대한 동작확인" classname="racingcar.RaceTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
