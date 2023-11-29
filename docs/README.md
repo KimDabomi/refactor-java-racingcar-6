@@ -1,36 +1,35 @@
-# 구현 기능 목록
-- race package
-  - Car 자동차
-    - getCarName 자동차 이름
-    - getPosition 자동차 위치
-    - move 이동
-  - MoveStatus 전진 여부 결정
-    - 랜덤 수 4이상
-      - 랜덤 수는 0~9 사이의 정수
-  - Race 경주 시작
-    - startRace 시도 횟수 만큼 전진 여부 결정
-    - getWinners 위치가 제일 높은 사람이 우승
+# ✅ 게임 방법
+- 자동차마다 이름을 갖고 있음, 전진 여부를 출력할 때 자동차 이름을 같이 출력
+- 자동차 이름은 쉼표로 구분, 5자 이하만 가능
+- 사용자가 몇 번의 이동을 할 것인지 입력
+- 전진 조건
+  - 0에서 9사이의 무작위 값을 구한 후 무작위 값이 4이상인 경우
+- 공동 우승인 경우 쉼표를 이용하여 구분
 
-- variable package
-  - MagicVariable 상수와 문장 변수로 지정
+# ⚙️ 구현 기능
+## domain
+- [x] 자동차 이름
+  - [x] 5자 이하 소문자만 가능
+  - [x] 쉼표 기준으로 구분
+  - [x] 공백 제거
+- [x] 시도할 횟수
+  - [x] 1이상의 수
+  - [x] 숫자만 가능
+- [x] 전진 판별
+  - [x] 랜덤 숫자가 4이상인 경우 전진
+- [x] 우승자 판별
+  - [x] 전진 값이 제일 큰 자동차
 
-- view package
-  - InputView 사용자 입력
-    - getTryCount 시도 횟수
-    - getCarNameInput 자동차 이름
-    - 예외
-      - checkCarNameExceptions 자동차 이름
-        - carNameRullException 쉼표로 구분, 5자 이하 소문자만 가능, 공백 입력 불가
-        - carNameDuplicateException 중복값 입력 불가
-      - checkTryCountExceptions 시도 횟수는 1이상의 자연수만 가능
-  - OutputView 결과
-    - printRace 게임 진행 출력
-    - printWinners 공동 우승일 경우 쉼표로 구분
+## view
+- [x] 사용자 입력
+  - [x] 자동차 이름 
+  - [x] 시도할 횟수
+- [x] 결과 출력
+  - [x] 각 라운드 결과
+    - [x] 전진 값을 '-'로 표시
+  - [x] 우승자 출력
+    - [x] 공동 우승 시 쉼표로 구분
 
-- game package
-  - PlayGame 게임 시작
-    - playGame 게임 시작 후 입력값 받기
-    - playRace 입력값을 토대로 경주 시작
-
-# 다이어그램
-![diagram](./racingcar-diagram.png)
+## controller
+- [x] 사용자 입력 처리
+- [x] 모델 업데이트
