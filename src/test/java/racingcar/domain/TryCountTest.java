@@ -10,6 +10,8 @@ import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
 
 public class TryCountTest {
+    TryCount tryCount = new TryCount();
+    
     private static Stream<Arguments> provideTryCountTestData() {
         return Stream.of(
                 Arguments.of("a123"),
@@ -22,7 +24,7 @@ public class TryCountTest {
     @DisplayName("시도 횟수 예외 확인")
     void testCarName(String userTryCount) {
         assertSimpleTest(() ->
-                assertThatThrownBy(() -> TryCount.getTryCount(userTryCount))
+                assertThatThrownBy(() -> tryCount.getTryCount(userTryCount))
                         .isInstanceOf(IllegalArgumentException.class)
         );
     }
